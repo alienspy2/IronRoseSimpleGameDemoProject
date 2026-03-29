@@ -1,0 +1,37 @@
+[prefab]
+version = 1
+rootName = "cannonball"
+[[gameObjects]]
+name = "cannonball"
+guid = "78c99637-0643-40e5-9841-56057b440b10"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = -1
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Sphere"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "ae2c9f21-fb57-41b6-999e-38c4f9bded72"
+[[gameObjects.components]]
+type = "RoseEngine.SphereCollider"
+[gameObjects.components.fields]
+radius = 0.5
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "Clawd"
+guid = "83312045-aae2-4d03-8ff2-6b520b9ecd76"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-0.489835262298584, 0.0, 0.0]
+localRotation = [0.0, -0.7071067690849304, 0.0, 0.7071067690849304]
+localScale = [0.1000000014901161, 0.1000000014901161, 0.1000000014901161]
+parentIndex = 0
+[gameObjects.prefabInstance]
+prefabGuid = "59a4f4b8-bb46-4fe2-af04-fac5201cf94d"

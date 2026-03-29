@@ -1,0 +1,1507 @@
+[prefab]
+version = 1
+rootName = "Clawd"
+[[gameObjects]]
+name = "Clawd"
+guid = "cf544903-0db7-4b51-b7e5-fd44632becbe"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = -1
+[[gameObjects]]
+name = "EarL1"
+guid = "80e3047b-7abb-42ae-a98b-05d715ded0ff"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-2.0, 3.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "EarL2"
+guid = "7f268115-d7f7-4397-a4af-21b872c86342"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-1.0, 3.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "EarR1"
+guid = "b94c58ff-c2b3-4930-9b47-6f5b63842c3a"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [1.0, 3.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "EarR2"
+guid = "5c156fe0-a12b-4f0b-b363-55451b3ee2d1"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [2.0, 3.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B6_-4"
+guid = "954f0943-7e79-49b1-8a10-46b132a9c5a0"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-4.0, 2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B6_-3"
+guid = "456639c9-9d0a-4781-8d6c-f0fb12df2f9a"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-3.0, 2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B6_-2"
+guid = "371f6a61-5998-48fb-891a-4ccb8f3b86f0"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-2.0, 2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B6_-1"
+guid = "cc12f3e5-df79-4f72-a7f9-d68d957f1223"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-1.0, 2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B6_0"
+guid = "030f07f5-5684-42f6-b159-d1c4592c4fbf"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B6_1"
+guid = "d858cea2-9d4b-47c8-b366-bcfc37d8c1c7"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [1.0, 2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B6_2"
+guid = "2b081651-4085-48b9-8ab6-fffb941424a8"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [2.0, 2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B6_3"
+guid = "a60aa948-3a61-4793-aed2-0134f96b6e2d"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [3.0, 2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B6_4"
+guid = "013150f8-ba7f-4700-b617-fac10641d568"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [4.0, 2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B5_-4"
+guid = "543a9913-eeb6-41ba-b8ae-e5facbef58ac"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-4.0, 1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B5_-3"
+guid = "34498cc7-5469-4c02-89e6-a060c631fc2f"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-3.0, 1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B5_-2"
+guid = "6ff7f1f0-b720-4c4e-b66a-c8c29b4f7b33"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-2.0, 1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B5_-1"
+guid = "f36e3d56-4998-4e2a-9165-e617a04f8166"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-1.0, 1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B5_0"
+guid = "53ab8f32-5257-4212-85f6-35691b38e171"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B5_1"
+guid = "9276adb5-058a-46da-997c-f723fd7c950a"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [1.0, 1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B5_2"
+guid = "53d97301-00f6-4d74-8c5c-13acf1fbd51f"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [2.0, 1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B5_3"
+guid = "9ff8e5fa-b0bd-4d27-af02-c3f6006d1754"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [3.0, 1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B5_4"
+guid = "92b120e8-1919-4334-a396-8ed73e2d8087"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [4.0, 1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B3_-4"
+guid = "7942efbb-9a36-4a96-be43-ebb031e8f267"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-4.0, -0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B3_-3"
+guid = "06ed7881-fcde-411b-b341-f721b225848f"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-3.0, -0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B3_-2"
+guid = "5c78f160-2544-497b-ac93-4d120841323e"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-2.0, -0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B3_-1"
+guid = "a8ae0b28-30d5-419d-a02f-9f3c1a363f8b"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-1.0, -0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B3_0"
+guid = "8cd087ca-e5f7-486d-8568-cc99ed22f094"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, -0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B3_1"
+guid = "550028c9-1437-4775-a382-d864b6476c2f"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [1.0, -0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B3_2"
+guid = "8b255315-56dc-4d4b-bc80-67a6a12e22ba"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [2.0, -0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B3_3"
+guid = "b2873d72-da46-4984-8f96-c78404849180"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [3.0, -0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B3_4"
+guid = "11415e04-ba9a-42b0-83ee-8f8d89f7ee18"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [4.0, -0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B2_-4"
+guid = "0ee46dab-8a38-449a-b109-1d54d31546f8"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-4.0, -1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B2_-3"
+guid = "00c28f66-ac81-4d45-a6d0-5d139ed530e1"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-3.0, -1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B2_-2"
+guid = "5165e86a-5ffd-4925-87c0-416dd4695b95"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-2.0, -1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B2_-1"
+guid = "b61754ad-cf09-4782-bf67-d964bdb36845"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-1.0, -1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B2_0"
+guid = "e2f6967f-1de9-4565-98a2-e6b5906c0f6f"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, -1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B2_1"
+guid = "89a7f9ed-97ce-4383-95c1-d5550dec0f7c"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [1.0, -1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B2_2"
+guid = "f383b88c-1fc6-4375-9aba-24f16e104eab"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [2.0, -1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B2_3"
+guid = "fb71b312-28f4-4115-a15f-cabd75a8df9a"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [3.0, -1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B2_4"
+guid = "26ec208e-adda-40a9-b52a-4ad446d0f0ca"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [4.0, -1.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B4_-4"
+guid = "1506a391-b0ec-4730-9225-54d88b5194b1"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-4.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B4_-3"
+guid = "30b81119-dd54-4596-bd03-8d1089489c94"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-3.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B4_-1"
+guid = "897d2ffe-cc82-4a44-a031-4279095be668"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-1.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B4_0"
+guid = "3712bdea-9a61-428c-886b-b6022ad4f135"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B4_1"
+guid = "4eaaaea1-d204-4703-9704-3040031e878a"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [1.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B4_3"
+guid = "d343ae68-763c-4687-bddf-93b4cac837bc"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [3.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B4_4"
+guid = "f02693f5-4ea2-4732-8ae1-c4a489a69755"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [4.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "EyeL"
+guid = "fbb95ef7-576a-4bea-8dbe-b0c66cf44350"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-2.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "e092d159-eab9-4e2c-baf5-60161e278d37"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "EyeR"
+guid = "10e6116c-4cb2-4e70-9175-edd9e3ea5675"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [2.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "e092d159-eab9-4e2c-baf5-60161e278d37"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "FL1a"
+guid = "70461324-6e3e-4809-8d16-e6e2dc1f01ea"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-4.0, -2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "FL1b"
+guid = "64c60f73-44d6-4b1d-80b8-b1d066697c2b"
+activeSelf = false
+[gameObjects.transform]
+localPosition = [-3.0, -2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "LL1"
+guid = "5e76e2cb-ac15-4b42-82b8-af161cb1f928"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-1.0, -2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "LR1"
+guid = "e04ff3aa-638a-450a-a0e0-6090bc724f96"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [1.0, -2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "FR1a"
+guid = "3b6d3d6a-8842-4e12-ace7-b5ca02ac395d"
+activeSelf = false
+[gameObjects.transform]
+localPosition = [3.0, -2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "FR1b"
+guid = "19952100-6250-4f90-8da1-40efecb08634"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [4.0, -2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "FL0a"
+guid = "23ee30c0-0f9c-44e4-b453-406069dcf7d3"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-4.0, -3.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "FL0b"
+guid = "504f6ae5-482e-4dc8-ab5d-fe4f806b2559"
+activeSelf = false
+[gameObjects.transform]
+localPosition = [-3.0, -3.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "LL0"
+guid = "3b932dce-4281-4e61-93aa-27b43f597fe6"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-1.0, -3.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "LR0"
+guid = "d03a37df-29ae-4a85-abb9-4e1e071f4b92"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [1.0, -3.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "FR0a"
+guid = "d61a8f9d-d94d-4c6c-9651-9b4b32ebc0a8"
+activeSelf = false
+[gameObjects.transform]
+localPosition = [3.0, -3.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "FR0b"
+guid = "e7e2e131-878d-483f-8391-9ca8daad0f0c"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [4.0, -3.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B4_-4_01"
+guid = "86dca561-5e70-436e-b101-984090bb1b4d"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-5.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B4_05"
+guid = "6a51d4a5-79e6-434a-ae0a-9834075888c3"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [5.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B4_-4_02"
+guid = "cf3ec4ff-89b3-4f32-94a4-c33a7eb44f75"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-5.0, -0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "B4_06"
+guid = "da5ccdc8-cbeb-4a23-a7f2-c6cab4163054"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [5.0, -0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "226d3b66-68b5-4b4e-815d-6064af59c7bc"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]

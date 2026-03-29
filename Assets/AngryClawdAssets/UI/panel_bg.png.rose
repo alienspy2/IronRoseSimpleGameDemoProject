@@ -1,0 +1,19 @@
+guid = "0e600cac-80eb-48d4-95c8-e0a6418f44e7"
+version = 1
+[importer]
+type = "TextureImporter"
+max_size = 2048
+compression = "BC7"
+texture_type = "Sprite"
+srgb = true
+filter_mode = "Point"
+wrap_mode = "Clamp"
+generate_mipmaps = false
+sprite_mode = "Single"
+pixels_per_unit = 100.0
+border = [16.0, 16.0, 16.0, 16.0]
+[[sub_assets]]
+name = "panel_bg"
+type = "Sprite"
+index = 0
+guid = "2680e603-3084-4861-ac65-ac0b44645865"

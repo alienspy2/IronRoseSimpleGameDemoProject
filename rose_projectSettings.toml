@@ -1,0 +1,16 @@
+[renderer]
+active_profile_guid = "c4e9265b-66e8-43ee-9285-5916a617a05e"
+
+[build]
+start_scene = "Assets/Scenes/Sample.scene"
+
+[editor]
+external_script_editor = "code"
+
+[log]
+verbose = true
+
+[cache]
+dont_use_cache = false
+dont_use_compress_texture = false
+force_clear_cache = false

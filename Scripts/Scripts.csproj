@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+    <!-- dotnet build 핫리로드: DLL은 bin/Debug/net10.0/Scripts.dll로 출력됨 -->
+    <!-- 의존성 DLL 복사 불필요 (엔진이 이미 로드한 어셈블리를 ALC Resolving으로 참조) -->
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(IronRoseRoot)src/IronRose.Engine/IronRose.Engine.csproj" />
+    <ProjectReference Include="$(IronRoseRoot)src/IronRose.Contracts/IronRose.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

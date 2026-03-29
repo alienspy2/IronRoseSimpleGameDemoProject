@@ -1,0 +1,14 @@
+metallic = 0.0
+roughness = 0.5
+occlusion = 1.0
+normalMapStrength = 1.0
+[color]
+r = 0.7989417910575867
+g = 0.6540090441703796
+b = 0.1902242302894592
+a = 1.0
+[emission]
+r = 0.0
+g = 0.0
+b = 0.0
+a = 1.0

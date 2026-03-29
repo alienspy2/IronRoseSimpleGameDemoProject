@@ -1,0 +1,421 @@
+name = "DefaultScene"
+[[gameObjects]]
+name = "Main Camera"
+guid = "f01e5dd2-e5db-45b3-9d25-809b6af714a2"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 3.0, -6.0]
+localRotation = [0.2297529578208923, 0.0, 0.0, 0.973249077796936]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = -1
+[[gameObjects.components]]
+type = "Camera"
+[gameObjects.components.fields]
+fieldOfView = 60.0
+nearClipPlane = 0.1000000014901161
+farClipPlane = 1000.0
+clearFlags = "Skybox"
+backgroundColor = [0.1920000016689301, 0.3019999861717224, 0.4749999940395355, 1.0]
+[[gameObjects]]
+name = "Cube"
+guid = "e38c5a85-b440-43fc-b417-090c736f9702"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = -1
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 0.0, 0.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects.components]]
+type = "RoseEngine.Rigidbody"
+[gameObjects.components.fields]
+mass = 1.0
+drag = 0.0
+angularDrag = 0.05000000074505806
+useGravity = true
+isKinematic = false
+[[gameObjects.components]]
+type = "HueRotator"
+[gameObjects.components.fields]
+speed = 0.5
+jumpForce = 8.0
+torqueStrength = 5.0
+enabled = true
+[[gameObjects]]
+name = "Plane"
+guid = "a83db50d-1972-41eb-843f-468341c3f4da"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = -1
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Plane"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [10.0, 0.009999999776482582, 10.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "Spot Light"
+guid = "b78fb209-ae0d-4c1d-924d-0ffe65bd5bdd"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 5.0, -2.0]
+localRotation = [0.5606287717819214, 0.0, 0.0, 0.8280672430992126]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = -1
+[[gameObjects.components]]
+type = "RoseEngine.Light"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+intensity = 2.0
+range = 15.0
+rangeNear = 0.0
+type = "Spot"
+enabled = true
+spotAngle = 30.0
+spotOuterAngle = 45.0
+shadows = true
+shadowResolution = 1024
+shadowBias = 0.001000000047497451
+shadowNormalBias = 0.001000000047497451
+shadowNearPlane = 0.1000000014901161
+shadowCullMode = "TwoFace"
+shadowSoftness = 1.0
+[[gameObjects]]
+name = "Smiley"
+guid = "0a4102b7-b613-4e36-bade-b991954b74d3"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 10.81725311279297, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = -1
+[[gameObjects]]
+name = "LeftEye"
+guid = "d3ee8b8e-60c7-4019-9cde-4c47994c602e"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-1.200000047683716, 2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [0.6000000238418579, 0.6000000238418579, 0.6000000238418579]
+parentIndex = 4
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 0.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "RightEye"
+guid = "928efe98-c498-4ca3-bfbc-92e97335b1c2"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [1.200000047683716, 2.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [0.6000000238418579, 0.6000000238418579, 0.6000000238418579]
+parentIndex = 4
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 0.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "Mouth1"
+guid = "a60a8d1e-cbb8-492e-8a57-eae67af4edd5"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-2.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [0.4000000059604645, 0.4000000059604645, 0.4000000059604645]
+parentIndex = 4
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 0.0, 0.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "Mouth2"
+guid = "19c673ac-8c1d-49f7-a724-957da07e30e7"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-1.600000023841858, 0.1000000014901161, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [0.4000000059604645, 0.4000000059604645, 0.4000000059604645]
+parentIndex = 4
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 0.0, 0.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "Mouth3"
+guid = "fec91663-a09f-4932-a1ae-e024899288cc"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-1.100000023841858, -0.2000000029802322, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [0.4000000059604645, 0.4000000059604645, 0.4000000059604645]
+parentIndex = 4
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 0.0, 0.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "Mouth4"
+guid = "2ce8ba8f-c83a-47e5-8823-15857d6b4cd8"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-0.5, -0.3499999940395355, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [0.4000000059604645, 0.4000000059604645, 0.4000000059604645]
+parentIndex = 4
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 0.0, 0.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "Mouth5"
+guid = "3292de0d-eeb1-4559-aebf-a211c0c22bb3"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, -0.4000000059604645, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [0.4000000059604645, 0.4000000059604645, 0.4000000059604645]
+parentIndex = 4
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 0.0, 0.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "Mouth6"
+guid = "92c09fee-2a77-447b-b19e-61af3edf49ec"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.5, -0.3499999940395355, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [0.4000000059604645, 0.4000000059604645, 0.4000000059604645]
+parentIndex = 4
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 0.0, 0.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "Mouth7"
+guid = "514bdf60-1956-48f6-a54f-3ec3804c5929"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [1.100000023841858, -0.2000000029802322, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [0.4000000059604645, 0.4000000059604645, 0.4000000059604645]
+parentIndex = 4
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 0.0, 0.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "Mouth8"
+guid = "106f7d65-90d5-478b-8c9c-468d096cb412"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [1.600000023841858, 0.1000000014901161, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [0.4000000059604645, 0.4000000059604645, 0.4000000059604645]
+parentIndex = 4
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 0.0, 0.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "Mouth9"
+guid = "5226f790-46ef-4e9f-aa6b-c555240667b7"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [2.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [0.4000000059604645, 0.4000000059604645, 0.4000000059604645]
+parentIndex = 4
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 0.0, 0.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "Clawd"
+guid = "68e48479-3e90-4d01-a13a-ca52bda858e8"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [-0.007945671677589417, 0.08283364772796631, -0.5449032783508301]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [0.1000000014901161, 0.1000000014901161, 0.1000000014901161]
+parentIndex = 1
+[gameObjects.prefabInstance]
+prefabGuid = "59a4f4b8-bb46-4fe2-af04-fac5201cf94d"
+[sceneEnvironment]
+skyboxExposure = 1.0
+skyboxRotation = 0.0
+ambientIntensity = 1.0
+ambientLight = [0.2000000029802322, 0.2000000029802322, 0.2000000029802322, 1.0]
+skyZenithIntensity = 0.800000011920929
+skyHorizonIntensity = 1.0
+sunIntensity = 20.0
+skyZenithColor = [0.1500000059604645, 0.300000011920929, 0.6499999761581421, 1.0]
+skyHorizonColor = [0.6000000238418579, 0.699999988079071, 0.8500000238418579, 1.0]
+[editorState]
+expandedNodes = ["e38c5a85-b440-43fc-b417-090c736f9702", "0a4102b7-b613-4e36-bade-b991954b74d3"]
+[editorState.sceneViewCamera]
+position = [-4.855278968811035, 5.619302272796631, -1.97533643245697]
+rotation = [0.306626558303833, 0.5527799129486084, -0.2289689630270004, 0.7402619123458862]
+pivot = [-0.0262143462896347, 0.5828336477279663, -0.5449032783508301]

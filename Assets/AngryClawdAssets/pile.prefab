@@ -1,0 +1,39 @@
+[prefab]
+version = 1
+rootName = "pile"
+[[gameObjects]]
+name = "pile"
+guid = "08c9ef9c-215c-46b1-a62a-8e685adf6ae0"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = -1
+[[gameObjects.components]]
+type = "PileScript"
+[gameObjects.components.fields]
+enabled = true
+[[gameObjects]]
+name = "Cube"
+guid = "655126af-50d1-4965-9a1a-b88470e8ce5e"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 0
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+materialGuid = "ae2c9f21-fb57-41b6-999e-38c4f9bded72"
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]

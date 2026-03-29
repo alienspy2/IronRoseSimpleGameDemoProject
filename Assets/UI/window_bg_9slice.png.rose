@@ -1,0 +1,20 @@
+guid = "b871c479-ef61-4f8a-80cd-7a06a7531358"
+version = 1
+[importer]
+type = "TextureImporter"
+max_size = 2048
+compression = "BC7"
+texture_type = "Sprite"
+srgb = true
+filter_mode = "Bilinear"
+wrap_mode = "Clamp"
+generate_mipmaps = false
+sprite_mode = "Single"
+pixels_per_unit = 100.0
+pivot = [0.5, 0.5]
+border = [16.0, 16.0, 16.0, 16.0]
+[[sub_assets]]
+name = "window_bg_9slice"
+type = "Sprite"
+index = 0
+guid = "ea32ed56-1db4-4973-b9c5-478706516409"
