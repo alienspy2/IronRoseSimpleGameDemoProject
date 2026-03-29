@@ -14,6 +14,9 @@ parentIndex = -1
 type = "PileScript"
 [gameObjects.components.fields]
 enabled = true
+[gameObjects.components.fields.explosionVfxPrefab]
+_assetGuid = "dcc25465-58da-4eb6-a706-5ee27f37897f"
+_assetType = "GameObject"
 [[gameObjects]]
 name = "Cube"
 guid = "655126af-50d1-4965-9a1a-b88470e8ce5e"

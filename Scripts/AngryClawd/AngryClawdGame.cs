@@ -14,6 +14,9 @@ public class AngryClawdGame : SimpleGameBase
     public string cannonballPrefabGuid = "0804bc30-df11-4fd2-89a5-5265d7180ff2";
 
     // === 게임 상태 ===
+    /// <summary>슬링샷이 한 번이라도 발사되었는지 여부. BombScript에서 참조하여 발사 전 폭발을 방지한다.</summary>
+    public static bool HasFired { get; private set; }
+
     private int currentStage = 1;
     private bool isAiming = false;
     private Vector2 aimStartPos;
@@ -86,6 +89,7 @@ public class AngryClawdGame : SimpleGameBase
 
     public override void Start()
     {
+        HasFired = false;
         SetupStage(currentStage);
         SpawnCannonball();
         InitUI();
@@ -156,6 +160,7 @@ public class AngryClawdGame : SimpleGameBase
         }
 
         cannonballFired = false;
+        HasFired = false;
 
         // 아이콘 카운트 캐시 리셋 (UpdateUI에서 재생성됨)
         lastPigCount = -1;
@@ -259,6 +264,7 @@ public class AngryClawdGame : SimpleGameBase
         rb.velocity = direction * (force / rb.mass);
 
         cannonballFired = true;
+        HasFired = true;
         fireTime = Time.time;
         shotsRemaining--;
         Debug.Log($"[AngryClawd] Fired! dir={direction}, force={force:F1}, shotsRemaining={shotsRemaining}");
@@ -706,6 +712,7 @@ public class AngryClawdGame : SimpleGameBase
     private void OnRestartClicked()
     {
         gameOver = false;
+        HasFired = false;
         currentStage = 1;
         lastPigCount = -1;
         lastShotCount = -1;

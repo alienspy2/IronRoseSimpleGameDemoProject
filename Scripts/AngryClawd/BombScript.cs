@@ -7,6 +7,7 @@
 //     OnCollisionEnter(Collision): void  -- TRIGGER_SPEED 이상 충돌 시 Explode() 호출
 //     Explode(): void                    -- 반경 EXPLOSION_RADIUS 내 Block 파괴 + 다른 Bomb 연쇄 폭발 (외부 호출 가능)
 // @note    hasExploded 플래그로 중복 폭발 방지. CannonballScript에서 Explode()를 직접 호출할 수 있다.
+//          OnCollisionEnter에서 AngryClawdGame.HasFired를 확인하여 슬링샷 발사 전 폭발을 방지한다.
 // ------------------------------------------------------------
 using RoseEngine;
 
@@ -18,11 +19,22 @@ public class BombScript : MonoBehaviour
     /// <summary>폭발 VFX 프리팹 (PileScript에서 주입).</summary>
     public GameObject? explosionVfxPrefab;
 
+    private const float FALL_OFF_Y = -10f;
+
     private bool hasExploded = false;
+
+    public override void Update()
+    {
+        if (transform.position.y < FALL_OFF_Y)
+        {
+            RoseEngine.Object.Destroy(gameObject);
+        }
+    }
 
     public override void OnCollisionEnter(Collision collision)
     {
         if (hasExploded) return;
+        if (!AngryClawdGame.HasFired) return;
         if (collision.relativeVelocity.magnitude >= TRIGGER_SPEED)
         {
             Explode();
@@ -58,7 +70,15 @@ public class BombScript : MonoBehaviour
             }
         }
 
-        ExplosionVfxScript.SpawnAt(transform.position, EXPLOSION_RADIUS);
+        if (explosionVfxPrefab != null)
+        {
+            var vfxGo = RoseEngine.Object.Instantiate(explosionVfxPrefab, transform.position, Quaternion.identity);
+            var vfx = vfxGo.GetComponent<ExplosionVfxScript>();
+            if (vfx != null)
+            {
+                vfx.Init(EXPLOSION_RADIUS);
+            }
+        }
 
         RoseEngine.Object.Destroy(gameObject);
     }

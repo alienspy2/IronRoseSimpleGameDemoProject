@@ -13,6 +13,16 @@ using RoseEngine;
 public class PigScript : MonoBehaviour
 {
     private const float KILL_SPEED = 2.0f;
+    private const float FALL_OFF_Y = -10f;
+
+    public override void Update()
+    {
+        if (transform.position.y < FALL_OFF_Y)
+        {
+            SpawnDebris();
+            RoseEngine.Object.Destroy(gameObject);
+        }
+    }
 
     public override void OnCollisionEnter(Collision collision)
     {

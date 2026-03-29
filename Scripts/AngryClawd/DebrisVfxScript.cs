@@ -15,7 +15,7 @@ using RoseEngine;
 public class DebrisVfxScript : MonoBehaviour
 {
     private const int DEBRIS_COUNT = 6;
-    private const float DEBRIS_SIZE = 0.80f;
+    private const float DEBRIS_SIZE = 0.6f;
     private const float SPREAD_SPEED_MIN = 1.0f;
     private const float SPREAD_SPEED_MAX = 3.0f;
     private const float SHRINK_DURATION = 0.5f;
