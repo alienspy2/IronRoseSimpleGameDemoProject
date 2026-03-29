@@ -29,7 +29,7 @@ public class PileScript : MonoBehaviour
     private const string MAT_PIG_GUID = "d80c9906-546b-4d30-a1ae-21ffd2221b0f";
     private const string MAT_BOMB_GUID = "08ba5c79-5dda-442a-9fc4-a223d45176df";
 
-    public GameObject explosionVfxPrefab;
+    public GameObject? explosionVfxPrefab;
 
     private bool pigPlaced = false;
 

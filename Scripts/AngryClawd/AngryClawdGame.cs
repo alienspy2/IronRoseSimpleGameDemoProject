@@ -9,9 +9,9 @@ using System.Collections.Generic;
 
 public class AngryClawdGame : SimpleGameBase
 {
-    // === 프리팹 GUID ===
-    public string pilePrefabGuid = "da096309-223c-488c-b39a-c5f62ba55fe0";
-    public string cannonballPrefabGuid = "0804bc30-df11-4fd2-89a5-5265d7180ff2";
+    // === 프리팹 링크 ===
+    public GameObject? pilePrefab;
+    public GameObject? cannonballPrefab;
 
     // === 게임 상태 ===
     /// <summary>슬링샷이 한 번이라도 발사되었는지 여부. BombScript에서 참조하여 발사 전 폭발을 방지한다.</summary>
@@ -52,9 +52,9 @@ public class AngryClawdGame : SimpleGameBase
     private const float PIG_DEATH_SHRINK_DURATION = 0.3f;  // scale 축소 애니메이션 시간
     private int dyingPigIconCount;                          // 현재 죽음 애니메이션 중인 아이콘 수
 
-    // 아이콘 스프라이트 GUID (sub_asset)
-    private const string PIG_ICON_SPRITE_GUID = "0fdb7e87-a870-4400-8188-e74c1052eada";
-    private const string SHOT_ICON_SPRITE_GUID = "9dd19a5c-e442-4a21-9495-019e1a370497";
+    // 아이콘 스프라이트 링크
+    public Sprite? pigIconSpritePrefab;
+    public Sprite? shotIconSpritePrefab;
 
     // === 발사 횟수 ===
     private int shotsRemaining;
@@ -130,7 +130,7 @@ public class AngryClawdGame : SimpleGameBase
             float xPos = PILE_START_X + i * PILE_SPACING;
             var position = new Vector3(xPos, 0f, 0f);
 
-            var pile = PrefabUtility.InstantiatePrefab(pilePrefabGuid, position, Quaternion.identity);
+            var pile = pilePrefab != null ? PrefabUtility.InstantiatePrefab(pilePrefab, position, Quaternion.identity) : null;
             if (pile != null)
             {
                 activePiles.Add(pile);
@@ -178,7 +178,7 @@ public class AngryClawdGame : SimpleGameBase
         }
 
         var spawnPos = shooter.transform.position + new Vector3(0f, 1.5f, 0f);
-        currentCannonball = PrefabUtility.InstantiatePrefab(cannonballPrefabGuid, spawnPos, Quaternion.identity);
+        currentCannonball = cannonballPrefab != null ? PrefabUtility.InstantiatePrefab(cannonballPrefab, spawnPos, Quaternion.identity) : null;
 
         if (currentCannonball != null)
         {
@@ -484,13 +484,9 @@ public class AngryClawdGame : SimpleGameBase
             }
         }
 
-        // 아이콘 스프라이트 로드
-        var db = Resources.GetAssetDatabase();
-        if (db != null)
-        {
-            pigIconSprite = db.LoadByGuid<Sprite>(PIG_ICON_SPRITE_GUID);
-            shotIconSprite = db.LoadByGuid<Sprite>(SHOT_ICON_SPRITE_GUID);
-        }
+        // 아이콘 스프라이트 로드 (인스펙터 링크)
+        pigIconSprite = pigIconSpritePrefab;
+        shotIconSprite = shotIconSpritePrefab;
 
         // 기존 UIText 숨기기 (텍스트를 빈 문자열로)
         if (pigCountText != null)

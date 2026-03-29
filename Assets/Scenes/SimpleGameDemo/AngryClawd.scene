@@ -80,9 +80,16 @@ parentIndex = -1
 [[gameObjects.components]]
 type = "AngryClawdGame"
 [gameObjects.components.fields]
-pilePrefabGuid = "da096309-223c-488c-b39a-c5f62ba55fe0"
-cannonballPrefabGuid = "0804bc30-df11-4fd2-89a5-5265d7180ff2"
 enabled = true
+[gameObjects.components.fields.cannonballPrefab]
+_assetGuid = "0804bc30-df11-4fd2-89a5-5265d7180ff2"
+_assetType = "GameObject"
+[gameObjects.components.fields.pigIconSpritePrefab]
+_assetGuid = "0fdb7e87-a870-4400-8188-e74c1052eada"
+_assetType = "Sprite"
+[gameObjects.components.fields.shotIconSpritePrefab]
+_assetGuid = "9dd19a5c-e442-4a21-9495-019e1a370497"
+_assetType = "Sprite"
 [[gameObjects]]
 name = "shooter"
 guid = "63dc9985-ab21-477c-9644-115ed4363297"
@@ -335,8 +342,8 @@ sunIntensity = 20.0
 skyZenithColor = [0.1500000059604645, 0.300000011920929, 0.6499999761581421, 1.0]
 skyHorizonColor = [0.6000000238418579, 0.699999988079071, 0.8500000238418579, 1.0]
 [editorState]
-expandedNodes = ["b472dadd-e0d9-4ff0-b079-fd343821f991", "3dd1dea7-35ab-4d09-8e0b-f215d795b94a", "bc10820e-f31b-46ca-b638-dbb48334ff45", "b315e6c8-f30f-4002-8779-2d4900614d43"]
+expandedNodes = ["3dd1dea7-35ab-4d09-8e0b-f215d795b94a", "bc10820e-f31b-46ca-b638-dbb48334ff45", "b315e6c8-f30f-4002-8779-2d4900614d43"]
 [editorState.sceneViewCamera]
-position = [-2.975250244140625, 3.12088680267334, 0.9848878979682922]
-rotation = [0.2204975783824921, 0.7499353885650635, -0.3034888505935669, 0.5448600053787231]
-pivot = [0.1540057361125946, -0.06374035775661469, -0.03186925128102303]
+position = [0.0, 5.0, -10.0]
+rotation = [0.2297528982162476, 0.0, 0.0, 0.9732490181922913]
+pivot = [0.0, 0.0, 0.0]
