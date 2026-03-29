@@ -36,6 +36,7 @@ public class AngryClawdGame : SimpleGameBase
     private GameObject? centerMessage;
     private GameObject? messageText;
     private GameObject? restartButton;
+    private GameObject? exitDemoButton;
 
     // === 아이콘 UI ===
     private Sprite? pigIconSprite;
@@ -484,6 +485,16 @@ public class AngryClawdGame : SimpleGameBase
             }
         }
 
+        exitDemoButton = GameObject.Find("ExitDemoButton");
+        if (exitDemoButton != null)
+        {
+            var btn = exitDemoButton.GetComponent<UIButton>();
+            if (btn != null)
+            {
+                btn.onClick = OnExitDemoClicked;
+            }
+        }
+
         // 아이콘 스프라이트 로드 (인스펙터 링크)
         pigIconSprite = pigIconSpritePrefab;
         shotIconSprite = shotIconSpritePrefab;
@@ -703,6 +714,12 @@ public class AngryClawdGame : SimpleGameBase
     private void HideMessage()
     {
         if (centerMessage != null) centerMessage.SetActive(false);
+    }
+
+    private void OnExitDemoClicked()
+    {
+        var scenePath = Path.Combine(Application.dataPath, "Scenes", "DemoLauncher.scene");
+        SceneManager.LoadScene(scenePath);
     }
 
     private void OnRestartClicked()
