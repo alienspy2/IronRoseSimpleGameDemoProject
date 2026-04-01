@@ -1151,6 +1151,40 @@ fontSize = 48.0
 color = [1.0, 1.0, 1.0, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[[gameObjects]]
+name = "SudokuGameController"
+guid = "5943b98a-5778-41a1-8040-55f79b2926d0"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = -1
+[[gameObjects.components]]
+type = "SudokuGame"
+[gameObjects.components.fields]
+enabled = true
+[gameObjects.components.fields.cellNormalSprite]
+_assetGuid = "451bc96f-624e-4630-8ecf-b251fd07b05b"
+_assetType = "Sprite"
+[gameObjects.components.fields.cellGivenSprite]
+_assetGuid = "2d6bdfba-146f-4ff0-bcb2-bd9899aff6e5"
+_assetType = "Sprite"
+[gameObjects.components.fields.cellSelectedSprite]
+_assetGuid = "474a15b1-51ad-4ff5-a89c-628c08bfc945"
+_assetType = "Sprite"
+[gameObjects.components.fields.cellSameGroupSprite]
+_assetGuid = "d1842c45-36ef-4950-84ec-15862c2dc2a1"
+_assetType = "Sprite"
+[gameObjects.components.fields.cellErrorSprite]
+_assetGuid = "67e59089-0b5b-4823-a54b-53dc6c5fe1ed"
+_assetType = "Sprite"
+[gameObjects.components.fields.btnDifficultySprite]
+_assetGuid = "450aace1-1152-4a29-b7db-2af55c37c909"
+_assetType = "Sprite"
+[gameObjects.components.fields.btnDifficultyActiveSprite]
+_assetGuid = "b8c8918e-8ff9-41a2-932c-8c356f8203bf"
+_assetType = "Sprite"
 [sceneEnvironment]
 skyboxExposure = 1.0
 skyboxRotation = 0.0
