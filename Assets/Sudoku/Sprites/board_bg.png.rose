@@ -1,0 +1,19 @@
+guid = "245a51a8-cdbe-41b0-a91b-618f55fb9b57"
+version = 1
+[importer]
+type = "TextureImporter"
+max_size = 2048
+compression = "BC7"
+texture_type = "Sprite"
+srgb = true
+filter_mode = "Bilinear"
+wrap_mode = "Clamp"
+generate_mipmaps = false
+sprite_mode = "Single"
+pixels_per_unit = 150.0
+border = [16.0, 16.0, 16.0, 16.0]
+[[sub_assets]]
+name = "board_bg"
+type = "Sprite"
+index = 0
+guid = "eda594cf-fe75-4674-90d0-7b1bdc7e4c66"

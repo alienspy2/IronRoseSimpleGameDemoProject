@@ -124,6 +124,23 @@ public class SudokuPuzzle
     }
 
     /// <summary>
+    /// 보드에 표시된 특정 숫자의 개수를 반환한다 (given + user input).
+    /// </summary>
+    public int CountDisplayed(int number)
+    {
+        int count = 0;
+        for (int row = 0; row < SIZE; row++)
+        {
+            for (int col = 0; col < SIZE; col++)
+            {
+                if (GetDisplayNumber(row, col) == number)
+                    count++;
+            }
+        }
+        return count;
+    }
+
+    /// <summary>
     /// SudokuGenerator를 사용하여 새 퍼즐을 생성한다.
     /// </summary>
     public static SudokuPuzzle Generate(Difficulty difficulty)

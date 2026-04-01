@@ -1,0 +1,19 @@
+guid = "33e75f3d-5a26-415d-ad24-55589631cabf"
+version = 1
+[importer]
+type = "TextureImporter"
+max_size = 2048
+compression = "none"
+texture_type = "Sprite"
+srgb = true
+filter_mode = "Bilinear"
+wrap_mode = "Clamp"
+generate_mipmaps = false
+sprite_mode = "Single"
+pixels_per_unit = 150.0
+border = [14.0, 14.0, 14.0, 14.0]
+[[sub_assets]]
+name = "cell_normal"
+type = "Sprite"
+index = 0
+guid = "451bc96f-624e-4630-8ecf-b251fd07b05b"

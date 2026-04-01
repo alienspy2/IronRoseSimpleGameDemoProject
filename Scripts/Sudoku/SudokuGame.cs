@@ -33,6 +33,9 @@ public class SudokuGame : SimpleGameBase
     public Sprite? cellErrorSprite;
     public Sprite? btnDifficultySprite;
     public Sprite? btnDifficultyActiveSprite;
+    public Sprite? gridLineThinSprite;
+    public Sprite? gridLineThickSprite;
+    public Font? numberFont;
 
     // 내부 상태
     private SudokuPuzzle? currentPuzzle;
@@ -45,6 +48,7 @@ public class SudokuGame : SimpleGameBase
     private GameObject? messageText;
     private UIButton? easyBtn, mediumBtn, hardBtn;
     private UIImage? easyImg, mediumImg, hardImg;
+    private bool _isCompleted;
 
     public override void Start()
     {
@@ -65,7 +69,7 @@ public class SudokuGame : SimpleGameBase
         board = new SudokuBoard();
         currentPuzzle = SudokuPuzzle.Generate(currentDifficulty);
         board.OnCellClicked = OnCellClicked;
-        board.Initialize(boardPanel, currentPuzzle, cellSprites);
+        board.Initialize(boardPanel, currentPuzzle, cellSprites, numberFont, gridLineThinSprite, gridLineThickSprite);
 
         // 4. NumberPad 초기화
         numberPad = new NumberPad();
@@ -74,18 +78,28 @@ public class SudokuGame : SimpleGameBase
         numberPad.OnHintClicked = OnHint;
         numberPad.Initialize(numberPadPanel);
 
-        // 5. 헤더 버튼 연결
+        // 5. 숫자 버튼 초기 상태 갱신
+        numberPad.UpdateButtonStates(currentPuzzle);
+
+        // 6. 헤더 버튼 연결
         SetupHeaderButtons();
 
-        // 6. 난이도 버튼 초기 상태
+        // 7. 난이도 버튼 초기 상태
         UpdateDifficultyButtons();
 
-        // 7. 메시지 패널 숨기기
-        if (messagePanel != null) messagePanel.SetActive(false);
+        // 8. 메시지 패널: 클릭 시 게임 리셋, 초기엔 숨기기
+        if (messagePanel != null)
+        {
+            var msgBtn = messagePanel.GetComponent<UIButton>() ?? messagePanel.AddComponent<UIButton>();
+            msgBtn.onClick = StartNewGame;
+            messagePanel.SetActive(false);
+        }
     }
 
     public override void Update()
     {
+        if (_isCompleted) return;
+
         // 숫자 키 1~9 (Alpha1~Alpha9)
         if (Input.GetKeyDown(KeyCode.Alpha1)) OnNumberInput(1);
         else if (Input.GetKeyDown(KeyCode.Alpha2)) OnNumberInput(2);
@@ -152,6 +166,7 @@ public class SudokuGame : SimpleGameBase
 
     private void OnCellClicked(int row, int col)
     {
+        if (_isCompleted) return;
         if (board == null || currentPuzzle == null) return;
         board.SelectCell(row, col);
         board.UpdateHighlights(currentPuzzle);
@@ -171,6 +186,7 @@ public class SudokuGame : SimpleGameBase
         currentPuzzle.SetUserInput(row, col, number);
         board.UpdateDisplay(currentPuzzle);
         board.UpdateHighlights(currentPuzzle);
+        numberPad?.UpdateButtonStates(currentPuzzle);
         CheckCompletion();
     }
 
@@ -181,6 +197,7 @@ public class SudokuGame : SimpleGameBase
         currentPuzzle.ClearUserInput(board.SelectedRow, board.SelectedCol);
         board.UpdateDisplay(currentPuzzle);
         board.UpdateHighlights(currentPuzzle);
+        numberPad?.UpdateButtonStates(currentPuzzle);
     }
 
     private void OnHint()
@@ -196,6 +213,7 @@ public class SudokuGame : SimpleGameBase
         currentPuzzle.SetUserInput(row, col, answer);
         board.UpdateDisplay(currentPuzzle);
         board.UpdateHighlights(currentPuzzle);
+        numberPad?.UpdateButtonStates(currentPuzzle);
         CheckCompletion();
     }
 
@@ -203,6 +221,7 @@ public class SudokuGame : SimpleGameBase
     {
         if (currentPuzzle != null && currentPuzzle.IsComplete)
         {
+            _isCompleted = true;
             ShowMessage("Congratulations!");
             Debug.Log("[Sudoku] Puzzle completed!");
         }
@@ -231,6 +250,7 @@ public class SudokuGame : SimpleGameBase
 
     private void StartNewGame()
     {
+        _isCompleted = false;
         HideMessage();
         board?.DestroyBoard();
 
@@ -243,7 +263,8 @@ public class SudokuGame : SimpleGameBase
         };
 
         var boardPanel = GameObject.Find("BoardPanel");
-        board?.Initialize(boardPanel, currentPuzzle, cellSprites);
+        board?.Initialize(boardPanel, currentPuzzle, cellSprites, numberFont, gridLineThinSprite, gridLineThickSprite);
+        numberPad?.UpdateButtonStates(currentPuzzle);
     }
 
     private void ShowMessage(string msg)

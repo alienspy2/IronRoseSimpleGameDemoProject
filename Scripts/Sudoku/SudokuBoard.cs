@@ -35,11 +35,12 @@ public class SudokuBoard
     public int SelectedRow { get; private set; } = -1;
     public int SelectedCol { get; private set; } = -1;
     public Action<int, int>? OnCellClicked;
+    private readonly System.Collections.Generic.List<GameObject> _gridLines = new();
 
     /// <summary>
     /// boardPanel 아래에 81개 셀 GameObject를 동적 생성하고 퍼즐 데이터로 초기화한다.
     /// </summary>
-    public void Initialize(GameObject boardPanel, SudokuPuzzle puzzle, Sprite[] cellSprites)
+    public void Initialize(GameObject boardPanel, SudokuPuzzle puzzle, Sprite[] cellSprites, Font? font = null, Sprite? lineThin = null, Sprite? lineThick = null)
     {
         var boardRT = boardPanel.GetComponent<RectTransform>();
         float boardSize = boardRT != null ? boardRT.sizeDelta.x : 450f;
@@ -83,7 +84,8 @@ public class SudokuBoard
                 textRT.anchoredPosition = Vector2.zero;
 
                 var uiText = textGO.AddComponent<UIText>();
-                uiText.fontSize = cellSize * 0.6f;
+                uiText.font = font;
+                uiText.fontSize = cellSize * 0.54f;
                 uiText.alignment = TextAnchor.MiddleCenter;
 
                 // SudokuCell 인스턴스 생성
@@ -91,6 +93,9 @@ public class SudokuBoard
                 Cells[row, col] = cell;
             }
         }
+
+        // 격자선 생성 (3x3 박스 구분)
+        CreateGridLines(boardPanel, boardSize, cellSize, lineThin, lineThick);
 
         // 퍼즐 데이터로 초기 표시
         UpdateDisplay(puzzle);
@@ -217,9 +222,63 @@ public class SudokuBoard
             }
         }
 
+        foreach (var line in _gridLines)
+        {
+            if (line != null) RoseEngine.Object.Destroy(line);
+        }
+        _gridLines.Clear();
+
         Cells = new SudokuCell[SIZE, SIZE];
         SelectedRow = -1;
         SelectedCol = -1;
+    }
+
+    private void CreateGridLines(GameObject boardPanel, float boardSize, float cellSize, Sprite? lineThin, Sprite? lineThick)
+    {
+        float thinWidth = 2f;
+        float thickWidth = 4f;
+
+        // 세로선 (col 1~8)
+        for (int col = 1; col < SIZE; col++)
+        {
+            bool isThick = col % 3 == 0;
+            var sprite = isThick ? lineThick : lineThin;
+            if (sprite == null) continue;
+
+            float width = isThick ? thickWidth : thinWidth;
+            var go = new GameObject($"VLine_{col}");
+            go.transform.SetParent(boardPanel.transform);
+            var rt = go.AddComponent<RectTransform>();
+            rt.anchorMin = Vector2.zero;
+            rt.anchorMax = Vector2.zero;
+            rt.pivot = new Vector2(0.5f, 0f);
+            rt.sizeDelta = new Vector2(width, boardSize);
+            rt.anchoredPosition = new Vector2(col * cellSize, 0f);
+            var img = go.AddComponent<UIImage>();
+            img.sprite = sprite;
+            _gridLines.Add(go);
+        }
+
+        // 가로선 (row 1~8)
+        for (int row = 1; row < SIZE; row++)
+        {
+            bool isThick = row % 3 == 0;
+            var sprite = isThick ? lineThick : lineThin;
+            if (sprite == null) continue;
+
+            float height = isThick ? thickWidth : thinWidth;
+            var go = new GameObject($"HLine_{row}");
+            go.transform.SetParent(boardPanel.transform);
+            var rt = go.AddComponent<RectTransform>();
+            rt.anchorMin = Vector2.zero;
+            rt.anchorMax = Vector2.zero;
+            rt.pivot = new Vector2(0f, 0.5f);
+            rt.sizeDelta = new Vector2(boardSize, height);
+            rt.anchoredPosition = new Vector2(0f, row * cellSize);
+            var img = go.AddComponent<UIImage>();
+            img.sprite = sprite;
+            _gridLines.Add(go);
+        }
     }
 
     private void HandleCellClick(int row, int col)

@@ -138,7 +138,7 @@ color = [1.0, 1.0, 1.0, 1.0]
 imageType = "Simple"
 preserveAspect = false
 [gameObjects.components.fields.sprite]
-_assetGuid = "cdd0c84f-368a-4369-b6b7-fbcd30476588"
+_assetGuid = "209b477f-c8ea-4696-b651-90ae41c59807"
 _assetType = "Sprite"
 [[gameObjects]]
 name = "HeaderPanel"
@@ -256,10 +256,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "Easy"
-fontSize = 18.0
+fontSize = 16.0
 color = [0.300000011920929, 0.25, 0.2000000029802322, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "MediumButton"
 guid = "6a77ae0f-0403-493e-8b01-5c65d7eef729"
@@ -312,10 +315,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "Medium"
-fontSize = 18.0
+fontSize = 16.0
 color = [0.300000011920929, 0.25, 0.2000000029802322, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "HardButton"
 guid = "3001d4dc-edca-46be-ac34-7a0a65792c2e"
@@ -368,10 +374,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "Hard"
-fontSize = 18.0
+fontSize = 16.0
 color = [0.300000011920929, 0.25, 0.2000000029802322, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "NewGameButton"
 guid = "476fd5c7-5027-4893-8fcf-04e5614e077e"
@@ -424,10 +433,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "New Game"
-fontSize = 18.0
+fontSize = 16.0
 color = [0.300000011920929, 0.25, 0.2000000029802322, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "BoardPanel"
 guid = "a280ae3b-c686-4706-8576-c8dcb4ae13f9"
@@ -544,10 +556,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "1"
-fontSize = 28.0
+fontSize = 25.0
 color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "Num2"
 guid = "088b55c0-e455-4ee5-810d-1f9d45d37c5c"
@@ -600,10 +615,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "2"
-fontSize = 28.0
+fontSize = 25.0
 color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "Num3"
 guid = "d8b89cd4-7243-43fc-b463-32509db0a841"
@@ -656,10 +674,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "3"
-fontSize = 28.0
+fontSize = 25.0
 color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "Num4"
 guid = "8f933f15-db43-4f53-9768-3690e6948bf8"
@@ -712,10 +733,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "4"
-fontSize = 28.0
+fontSize = 25.0
 color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "Num5"
 guid = "3f03b6c1-b159-4eeb-91dd-0d31df23c1e4"
@@ -768,10 +792,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "5"
-fontSize = 28.0
+fontSize = 25.0
 color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "Num6"
 guid = "730320a8-f653-4d3a-8622-cdab0eeacea3"
@@ -824,10 +851,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "6"
-fontSize = 28.0
+fontSize = 25.0
 color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "Num7"
 guid = "fd9f1874-a731-4b23-b4b6-5ca91a9e01ef"
@@ -880,10 +910,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "7"
-fontSize = 28.0
+fontSize = 25.0
 color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "Num8"
 guid = "58881445-cb26-4f7f-9a59-33729093fdb9"
@@ -936,10 +969,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "8"
-fontSize = 28.0
+fontSize = 25.0
 color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "Num9"
 guid = "a83851e3-8c76-47b3-8fd3-d3cfac511d02"
@@ -992,10 +1028,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "9"
-fontSize = 28.0
+fontSize = 25.0
 color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "EraseButton"
 guid = "04331678-5b83-4e76-bb78-4e55dcc12eb9"
@@ -1048,10 +1087,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "Erase"
-fontSize = 16.0
-color = [1.0, 1.0, 1.0, 1.0]
+fontSize = 14.0
+color = [0.0, 0.0, 0.0, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "HintButton"
 guid = "628eb36a-93a1-487d-90c3-b0054ad2362b"
@@ -1104,10 +1146,13 @@ pivot = [0.5, 0.5]
 type = "RoseEngine.UIText"
 [gameObjects.components.fields]
 text = "Hint"
-fontSize = 16.0
-color = [1.0, 1.0, 1.0, 1.0]
+fontSize = 14.0
+color = [0.0, 0.0, 0.0, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "MessagePanel"
 guid = "73cb65c9-c1fd-4337-a1fe-355d85512410"
@@ -1151,9 +1196,12 @@ fontSize = 48.0
 color = [1.0, 1.0, 1.0, 1.0]
 alignment = "MiddleCenter"
 overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [[gameObjects]]
 name = "SudokuGameController"
-guid = "5943b98a-5778-41a1-8040-55f79b2926d0"
+guid = "347993d7-26be-4a2c-a68a-db0ca5df3712"
 activeSelf = true
 [gameObjects.transform]
 localPosition = [0.0, 0.0, 0.0]
@@ -1185,6 +1233,15 @@ _assetType = "Sprite"
 [gameObjects.components.fields.btnDifficultyActiveSprite]
 _assetGuid = "b8c8918e-8ff9-41a2-932c-8c356f8203bf"
 _assetType = "Sprite"
+[gameObjects.components.fields.gridLineThinSprite]
+_assetGuid = "0d82667f-fbc5-435e-b742-bbe5e16ce037"
+_assetType = "Sprite"
+[gameObjects.components.fields.gridLineThickSprite]
+_assetGuid = "56a936dd-6cc6-46fd-bdb9-952e572fdec1"
+_assetType = "Sprite"
+[gameObjects.components.fields.numberFont]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [sceneEnvironment]
 skyboxExposure = 1.0
 skyboxRotation = 0.0
@@ -1196,8 +1253,8 @@ sunIntensity = 20.0
 skyZenithColor = [0.1500000059604645, 0.300000011920929, 0.6499999761581421, 1.0]
 skyHorizonColor = [0.6000000238418579, 0.699999988079071, 0.8500000238418579, 1.0]
 [editorState]
-expandedNodes = ["e6003e7c-3ee4-45e2-bcc4-bc7c6018e55a"]
+expandedNodes = ["e6003e7c-3ee4-45e2-bcc4-bc7c6018e55a", "02d62a23-042a-4fb2-b525-04950cc96ff0", "a280ae3b-c686-4706-8576-c8dcb4ae13f9", "ed98e5d5-b741-4af5-a05d-9c8bd906a7e2", "d209802c-8ab1-45d4-8f5b-8fd11ee86094", "d8b89cd4-7243-43fc-b463-32509db0a841", "04331678-5b83-4e76-bb78-4e55dcc12eb9", "628eb36a-93a1-487d-90c3-b0054ad2362b"]
 [editorState.sceneViewCamera]
-position = [0.0, 30.2068977355957, -60.41380310058594]
+position = [0.0, 5.0, -10.0]
 rotation = [0.2297528982162476, 0.0, 0.0, 0.9732490181922913]
 pivot = [0.0, 0.0, 0.0]

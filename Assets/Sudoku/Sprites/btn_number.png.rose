@@ -1,0 +1,19 @@
+guid = "1323f0a3-325c-4fb9-83a4-fff7365785aa"
+version = 1
+[importer]
+type = "TextureImporter"
+max_size = 2048
+compression = "BC7"
+texture_type = "Sprite"
+srgb = true
+filter_mode = "Bilinear"
+wrap_mode = "Clamp"
+generate_mipmaps = false
+sprite_mode = "Single"
+pixels_per_unit = 150.0
+border = [20.0, 20.0, 20.0, 20.0]
+[[sub_assets]]
+name = "btn_number"
+type = "Sprite"
+index = 0
+guid = "206256a4-db5a-479b-9ee0-4a043f1ea065"

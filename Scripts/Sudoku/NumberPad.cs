@@ -18,9 +18,16 @@ using RoseEngine;
 
 public class NumberPad
 {
+    private const int NUM_COUNT = 9;
+
     public Action<int>? OnNumberClicked;
     public Action? OnEraseClicked;
     public Action? OnHintClicked;
+
+    // 숫자 버튼 참조 (인덱스 0 = 숫자 1, ... 인덱스 8 = 숫자 9)
+    private readonly UIButton?[] _numButtons = new UIButton?[NUM_COUNT];
+    private readonly UIText?[] _numTexts = new UIText?[NUM_COUNT];
+    private readonly Color[] _originalTextColors = new Color[NUM_COUNT];
 
     /// <summary>
     /// NumberPadPanel 아래의 숫자/지우기/힌트 버튼에 onClick 핸들러를 연결한다.
@@ -39,6 +46,10 @@ public class NumberPad
                     int num = i; // 캡처용 로컬 변수
                     btn.onClick = () => OnNumberClicked?.Invoke(num);
                 }
+                _numButtons[i - 1] = btn;
+                var text = btnGO.GetComponentInChildren<UIText>();
+                _numTexts[i - 1] = text;
+                if (text != null) _originalTextColors[i - 1] = text.color;
             }
         }
 
@@ -56,6 +67,27 @@ public class NumberPad
         {
             var btn = hintGO.GetComponent<UIButton>();
             if (btn != null) btn.onClick = () => OnHintClicked?.Invoke();
+        }
+    }
+
+    /// <summary>
+    /// 보드 상태에 따라 숫자 버튼의 활성/비활성을 갱신한다.
+    /// 9개 모두 배치된 숫자의 버튼은 비활성화하고 텍스트도 어둡게 한다.
+    /// </summary>
+    public void UpdateButtonStates(SudokuPuzzle puzzle)
+    {
+        var disabledTextColor = new Color(0.5f, 0.5f, 0.5f, 0.4f);
+
+        for (int i = 0; i < NUM_COUNT; i++)
+        {
+            int number = i + 1;
+            bool allPlaced = puzzle.CountDisplayed(number) >= NUM_COUNT;
+
+            if (_numButtons[i] != null)
+                _numButtons[i]!.interactable = !allPlaced;
+
+            if (_numTexts[i] != null)
+                _numTexts[i]!.color = allPlaced ? disabledTextColor : _originalTextColors[i];
         }
     }
 
