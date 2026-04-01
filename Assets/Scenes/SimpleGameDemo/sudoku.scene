@@ -1,0 +1,1169 @@
+name = "sudoku"
+[[gameObjects]]
+name = "Main Camera"
+guid = "05c3c2b9-f699-4b08-8bfc-86b1869e1589"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 3.0, -6.0]
+localRotation = [0.2297529578208923, 0.0, 0.0, 0.973249077796936]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = -1
+[[gameObjects.components]]
+type = "Camera"
+[gameObjects.components.fields]
+fieldOfView = 60.0
+nearClipPlane = 0.1000000014901161
+farClipPlane = 1000.0
+clearFlags = "Skybox"
+backgroundColor = [0.1920000016689301, 0.3019999861717224, 0.4749999940395355, 1.0]
+[[gameObjects]]
+name = "Cube"
+guid = "7a3f0b57-04e6-480c-b49c-26d13e482281"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.5, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = -1
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Cube"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [1.0, 1.0, 1.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "Plane"
+guid = "5e628091-c099-4f69-afcd-5870c446c6c5"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = -1
+[[gameObjects.components]]
+type = "MeshFilter"
+[gameObjects.components.fields]
+primitiveType = "Plane"
+[[gameObjects.components]]
+type = "MeshRenderer"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+metallic = 0.0
+roughness = 0.5
+[[gameObjects.components]]
+type = "RoseEngine.BoxCollider"
+[gameObjects.components.fields]
+size = [10.0, 0.009999999776482582, 10.0]
+isTrigger = false
+center = [0.0, 0.0, 0.0]
+[[gameObjects]]
+name = "Spot Light"
+guid = "ba6eb036-e85a-436c-b556-3869035d8b48"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 5.0, -2.0]
+localRotation = [0.5606287717819214, 0.0, 0.0, 0.8280672430992126]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = -1
+[[gameObjects.components]]
+type = "RoseEngine.Light"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+intensity = 2.0
+range = 15.0
+rangeNear = 0.0
+type = "Spot"
+enabled = true
+spotAngle = 30.0
+spotOuterAngle = 45.0
+shadows = true
+shadowResolution = 1024
+shadowBias = 0.001000000047497451
+shadowNormalBias = 0.001000000047497451
+shadowNearPlane = 0.1000000014901161
+shadowCullMode = "TwoFace"
+shadowSoftness = 1.0
+[[gameObjects]]
+name = "SudokuCanvas"
+guid = "e6003e7c-3ee4-45e2-bcc4-bc7c6018e55a"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = -1
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.Canvas"
+[gameObjects.components.fields]
+renderMode = "ScreenSpaceOverlay"
+sortingOrder = 0
+referenceResolution = [1280.0, 720.0]
+scaleMode = "ScaleWithScreenSize"
+matchWidthOrHeight = 0.5
+[[gameObjects]]
+name = "Background"
+guid = "3376031e-e395-47b3-a8ed-dd0a5072ae09"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 4
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Simple"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "cdd0c84f-368a-4369-b6b7-fbcd30476588"
+_assetType = "Sprite"
+[[gameObjects]]
+name = "HeaderPanel"
+guid = "02d62a23-042a-4fb2-b525-04950cc96ff0"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 4
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 0.0]
+anchoredPosition = [0.0, 10.0]
+sizeDelta = [-40.0, 80.0]
+pivot = [0.5, 0.0]
+[[gameObjects.components]]
+type = "RoseEngine.UIPanel"
+[gameObjects.components.fields]
+color = [0.0, 0.0, 0.0, 0.0]
+imageType = "Simple"
+[[gameObjects]]
+name = "TitleImage"
+guid = "86c9ae73-49f8-424d-96c0-20b1cfa240f5"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 6
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [0.0, 0.0]
+anchoredPosition = [10.0, 15.0]
+sizeDelta = [200.0, 50.0]
+pivot = [0.0, 0.0]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Simple"
+preserveAspect = true
+[gameObjects.components.fields.sprite]
+_assetGuid = "e9653f62-a6ba-453b-bcca-65663d79dd45"
+_assetType = "Sprite"
+[[gameObjects]]
+name = "DifficultyPanel"
+guid = "41983401-0432-4d61-bbe2-b6ba7de213c1"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 6
+[gameObjects.rectTransform]
+anchorMin = [0.5, 0.5]
+anchorMax = [0.5, 0.5]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [360.0, 40.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIPanel"
+[gameObjects.components.fields]
+color = [0.0, 0.0, 0.0, 0.0]
+imageType = "Simple"
+[[gameObjects]]
+name = "EasyButton"
+guid = "aa1bb84d-3171-4980-9321-13716a6b4ef1"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 8
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [0.0, 0.0]
+anchoredPosition = [10.0, 2.0]
+sizeDelta = [100.0, 36.0]
+pivot = [0.0, 0.0]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "450aace1-1152-4a29-b7db-2af55c37c909"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "SpriteSwap"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "3de5a8a7-ee89-4b0b-9587-9ba7b8d0ecec"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 9
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "Easy"
+fontSize = 18.0
+color = [0.300000011920929, 0.25, 0.2000000029802322, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "MediumButton"
+guid = "6a77ae0f-0403-493e-8b01-5c65d7eef729"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 8
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [0.0, 0.0]
+anchoredPosition = [120.0, 2.0]
+sizeDelta = [100.0, 36.0]
+pivot = [0.0, 0.0]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "450aace1-1152-4a29-b7db-2af55c37c909"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "SpriteSwap"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "89173a38-96c7-491d-8e3e-9cbc182bdbbe"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 11
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "Medium"
+fontSize = 18.0
+color = [0.300000011920929, 0.25, 0.2000000029802322, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "HardButton"
+guid = "3001d4dc-edca-46be-ac34-7a0a65792c2e"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 8
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [0.0, 0.0]
+anchoredPosition = [230.0, 2.0]
+sizeDelta = [100.0, 36.0]
+pivot = [0.0, 0.0]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "450aace1-1152-4a29-b7db-2af55c37c909"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "SpriteSwap"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "3105f189-8151-411e-8b3d-3d6d12b00c76"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 13
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "Hard"
+fontSize = 18.0
+color = [0.300000011920929, 0.25, 0.2000000029802322, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "NewGameButton"
+guid = "476fd5c7-5027-4893-8fcf-04e5614e077e"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 6
+[gameObjects.rectTransform]
+anchorMin = [1.0, 0.0]
+anchorMax = [1.0, 0.0]
+anchoredPosition = [-10.0, 20.0]
+sizeDelta = [140.0, 40.0]
+pivot = [1.0, 0.0]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "0e63ebb3-690b-4238-822e-744c2e01005e"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "ColorTint"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "27426458-f890-406e-b7cc-59bad89e9429"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 15
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "New Game"
+fontSize = 18.0
+color = [0.300000011920929, 0.25, 0.2000000029802322, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "BoardPanel"
+guid = "a280ae3b-c686-4706-8576-c8dcb4ae13f9"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 4
+[gameObjects.rectTransform]
+anchorMin = [0.5, 0.5]
+anchorMax = [0.5, 0.5]
+anchoredPosition = [0.0, -10.0]
+sizeDelta = [450.0, 450.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIPanel"
+[gameObjects.components.fields]
+color = [0.0, 0.0, 0.0, 0.0]
+imageType = "Simple"
+[[gameObjects]]
+name = "BoardBackground"
+guid = "a6b3fac8-531e-4c96-875f-8c283803d50a"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 17
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [10.0, 10.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "eda594cf-fe75-4674-90d0-7b1bdc7e4c66"
+_assetType = "Sprite"
+[[gameObjects]]
+name = "NumberPadPanel"
+guid = "ed98e5d5-b741-4af5-a05d-9c8bd906a7e2"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 4
+[gameObjects.rectTransform]
+anchorMin = [0.0, 1.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, -10.0]
+sizeDelta = [-40.0, 70.0]
+pivot = [0.5, 1.0]
+[[gameObjects.components]]
+type = "RoseEngine.UIPanel"
+[gameObjects.components.fields]
+color = [0.0, 0.0, 0.0, 0.0]
+imageType = "Simple"
+[[gameObjects]]
+name = "Num1"
+guid = "d209802c-8ab1-45d4-8f5b-8fd11ee86094"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 19
+[gameObjects.rectTransform]
+anchorMin = [0.5, 0.5]
+anchorMax = [0.5, 0.5]
+anchoredPosition = [-224.0, 0.0]
+sizeDelta = [50.0, 50.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "206256a4-db5a-479b-9ee0-4a043f1ea065"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "ColorTint"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "99a1aaf7-0213-468f-a147-e02b906d96e2"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 20
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "1"
+fontSize = 28.0
+color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "Num2"
+guid = "088b55c0-e455-4ee5-810d-1f9d45d37c5c"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 19
+[gameObjects.rectTransform]
+anchorMin = [0.5, 0.5]
+anchorMax = [0.5, 0.5]
+anchoredPosition = [-168.0, 0.0]
+sizeDelta = [50.0, 50.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "206256a4-db5a-479b-9ee0-4a043f1ea065"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "ColorTint"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "b135b627-fbf3-4c6a-a949-9282468936bd"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 22
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "2"
+fontSize = 28.0
+color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "Num3"
+guid = "d8b89cd4-7243-43fc-b463-32509db0a841"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 19
+[gameObjects.rectTransform]
+anchorMin = [0.5, 0.5]
+anchorMax = [0.5, 0.5]
+anchoredPosition = [-112.0, 0.0]
+sizeDelta = [50.0, 50.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "206256a4-db5a-479b-9ee0-4a043f1ea065"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "ColorTint"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "740619aa-e583-46b9-a378-9d915083df5b"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 24
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "3"
+fontSize = 28.0
+color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "Num4"
+guid = "8f933f15-db43-4f53-9768-3690e6948bf8"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 19
+[gameObjects.rectTransform]
+anchorMin = [0.5, 0.5]
+anchorMax = [0.5, 0.5]
+anchoredPosition = [-56.0, 0.0]
+sizeDelta = [50.0, 50.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "206256a4-db5a-479b-9ee0-4a043f1ea065"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "ColorTint"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "80afade4-74d3-43c6-bb43-64a23e17286f"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 26
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "4"
+fontSize = 28.0
+color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "Num5"
+guid = "3f03b6c1-b159-4eeb-91dd-0d31df23c1e4"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 19
+[gameObjects.rectTransform]
+anchorMin = [0.5, 0.5]
+anchorMax = [0.5, 0.5]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [50.0, 50.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "206256a4-db5a-479b-9ee0-4a043f1ea065"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "ColorTint"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "979b7359-b0bb-4382-9c71-5e75689fdfe2"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 28
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "5"
+fontSize = 28.0
+color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "Num6"
+guid = "730320a8-f653-4d3a-8622-cdab0eeacea3"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 19
+[gameObjects.rectTransform]
+anchorMin = [0.5, 0.5]
+anchorMax = [0.5, 0.5]
+anchoredPosition = [56.0, 0.0]
+sizeDelta = [50.0, 50.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "206256a4-db5a-479b-9ee0-4a043f1ea065"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "ColorTint"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "3773e79a-a257-48cf-99d6-a3cb01715343"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 30
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "6"
+fontSize = 28.0
+color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "Num7"
+guid = "fd9f1874-a731-4b23-b4b6-5ca91a9e01ef"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 19
+[gameObjects.rectTransform]
+anchorMin = [0.5, 0.5]
+anchorMax = [0.5, 0.5]
+anchoredPosition = [112.0, 0.0]
+sizeDelta = [50.0, 50.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "206256a4-db5a-479b-9ee0-4a043f1ea065"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "ColorTint"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "1fc5c712-15b8-4376-a0a4-e7ade620aab4"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 32
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "7"
+fontSize = 28.0
+color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "Num8"
+guid = "58881445-cb26-4f7f-9a59-33729093fdb9"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 19
+[gameObjects.rectTransform]
+anchorMin = [0.5, 0.5]
+anchorMax = [0.5, 0.5]
+anchoredPosition = [168.0, 0.0]
+sizeDelta = [50.0, 50.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "206256a4-db5a-479b-9ee0-4a043f1ea065"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "ColorTint"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "8a1807e8-d5b3-40cd-b4ce-dff362fb2980"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 34
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "8"
+fontSize = 28.0
+color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "Num9"
+guid = "a83851e3-8c76-47b3-8fd3-d3cfac511d02"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 19
+[gameObjects.rectTransform]
+anchorMin = [0.5, 0.5]
+anchorMax = [0.5, 0.5]
+anchoredPosition = [224.0, 0.0]
+sizeDelta = [50.0, 50.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "206256a4-db5a-479b-9ee0-4a043f1ea065"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "ColorTint"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "ea316953-9b48-46e6-9d83-802b1b07f117"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 36
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "9"
+fontSize = 28.0
+color = [0.2000000029802322, 0.1500000059604645, 0.1000000014901161, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "EraseButton"
+guid = "04331678-5b83-4e76-bb78-4e55dcc12eb9"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 19
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.5]
+anchorMax = [0.0, 0.5]
+anchoredPosition = [10.0, 0.0]
+sizeDelta = [80.0, 40.0]
+pivot = [0.0, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "0e63ebb3-690b-4238-822e-744c2e01005e"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "ColorTint"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "b7c4e885-f893-479d-91e4-a84c14d40b22"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 38
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "Erase"
+fontSize = 16.0
+color = [1.0, 1.0, 1.0, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "HintButton"
+guid = "628eb36a-93a1-487d-90c3-b0054ad2362b"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 19
+[gameObjects.rectTransform]
+anchorMin = [1.0, 0.5]
+anchorMax = [1.0, 0.5]
+anchoredPosition = [-10.0, 0.0]
+sizeDelta = [80.0, 40.0]
+pivot = [1.0, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "0e63ebb3-690b-4238-822e-744c2e01005e"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "ColorTint"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "c45a983b-7730-496b-a434-0d4d18f4fe04"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 40
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "Hint"
+fontSize = 16.0
+color = [1.0, 1.0, 1.0, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[[gameObjects]]
+name = "MessagePanel"
+guid = "73cb65c9-c1fd-4337-a1fe-355d85512410"
+activeSelf = false
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 4
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIPanel"
+[gameObjects.components.fields]
+color = [0.0, 0.0, 0.0, 0.5]
+imageType = "Simple"
+[[gameObjects]]
+name = "MessageText"
+guid = "480d91fc-8a0d-4788-b709-fb0ccd496d81"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 42
+[gameObjects.rectTransform]
+anchorMin = [0.5, 0.5]
+anchorMax = [0.5, 0.5]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [400.0, 100.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = " "
+fontSize = 48.0
+color = [1.0, 1.0, 1.0, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[sceneEnvironment]
+skyboxExposure = 1.0
+skyboxRotation = 0.0
+ambientIntensity = 1.0
+ambientLight = [0.2000000029802322, 0.2000000029802322, 0.2000000029802322, 1.0]
+skyZenithIntensity = 0.800000011920929
+skyHorizonIntensity = 1.0
+sunIntensity = 20.0
+skyZenithColor = [0.1500000059604645, 0.300000011920929, 0.6499999761581421, 1.0]
+skyHorizonColor = [0.6000000238418579, 0.699999988079071, 0.8500000238418579, 1.0]
+[editorState]
+expandedNodes = ["e6003e7c-3ee4-45e2-bcc4-bc7c6018e55a"]
+[editorState.sceneViewCamera]
+position = [0.0, 30.2068977355957, -60.41380310058594]
+rotation = [0.2297528982162476, 0.0, 0.0, 0.9732490181922913]
+pivot = [0.0, 0.0, 0.0]
