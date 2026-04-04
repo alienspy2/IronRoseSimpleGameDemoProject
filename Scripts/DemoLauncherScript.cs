@@ -3,7 +3,7 @@ using RoseEngine;
 
 public class DemoLauncherScript : MonoBehaviour
 {
-    private readonly string[] sceneNames = { "AngryClawd" };
+    private readonly string[] sceneNames = { "AngryClawd", "sudoku" };
     private readonly string sceneFolderRelative = "Scenes/SimpleGameDemo";
 
     public UIText? descriptionText;

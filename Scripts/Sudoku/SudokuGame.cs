@@ -21,6 +21,7 @@
 //          GameObject.Find()로 씬 요소를 이름으로 검색한다 (Phase C에서 고유 이름 부여됨).
 // ------------------------------------------------------------
 
+using System.IO;
 using RoseEngine;
 
 public class SudokuGame : SimpleGameBase
@@ -87,7 +88,16 @@ public class SudokuGame : SimpleGameBase
         // 7. 난이도 버튼 초기 상태
         UpdateDifficultyButtons();
 
-        // 8. 메시지 패널: 클릭 시 게임 리셋, 초기엔 숨기기
+        // 8. Exit Demo 버튼
+        var exitDemoButton = GameObject.Find("ExitDemoButton");
+        if (exitDemoButton != null)
+        {
+            var btn = exitDemoButton.GetComponent<UIButton>();
+            if (btn != null)
+                btn.onClick = OnExitDemoClicked;
+        }
+
+        // 9. 메시지 패널: 클릭 시 게임 리셋, 초기엔 숨기기
         if (messagePanel != null)
         {
             var msgBtn = messagePanel.GetComponent<UIButton>() ?? messagePanel.AddComponent<UIButton>();
@@ -280,5 +290,11 @@ public class SudokuGame : SimpleGameBase
     private void HideMessage()
     {
         if (messagePanel != null) messagePanel.SetActive(false);
+    }
+
+    private void OnExitDemoClicked()
+    {
+        var scenePath = Path.Combine(Application.dataPath, "Scenes", "DemoLauncher.scene");
+        SceneManager.LoadScene(scenePath);
     }
 }

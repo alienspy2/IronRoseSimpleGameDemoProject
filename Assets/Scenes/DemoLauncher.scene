@@ -192,6 +192,65 @@ overflow = "Wrap"
 [gameObjects.components.fields.font]
 _assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
 _assetType = "Font"
+[[gameObjects]]
+name = "BtnSudoku"
+guid = "c906530c-cf8e-4403-8f7d-4f52d8af542d"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 2
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.5799999833106995]
+anchorMax = [0.25, 0.699999988079071]
+anchoredPosition = [23.0, 0.0]
+sizeDelta = [-46.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "03fec1b9-b3fc-44d0-b42c-90f9d37c6b82"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "ColorTint"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "3f0938fd-4c55-4cb6-97c7-0320e31102fe"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 8
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "Sudoku"
+fontSize = 22.0
+color = [1.0, 1.0, 1.0, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [sceneEnvironment]
 skyboxExposure = 1.0
 skyboxRotation = 0.0
@@ -203,7 +262,7 @@ sunIntensity = 20.0
 skyZenithColor = [0.1500000059604645, 0.300000011920929, 0.6499999761581421, 1.0]
 skyHorizonColor = [0.6000000238418579, 0.699999988079071, 0.8500000238418579, 1.0]
 [editorState]
-expandedNodes = ["88bd10ca-9572-4c5a-ace1-ef44a1e9d159", "4f8e9dbb-98c9-4edc-bdf9-8420e7b1397c", "b52849a5-478e-49bd-94a6-ec7531192d44"]
+expandedNodes = ["88bd10ca-9572-4c5a-ace1-ef44a1e9d159", "4f8e9dbb-98c9-4edc-bdf9-8420e7b1397c", "b52849a5-478e-49bd-94a6-ec7531192d44", "c906530c-cf8e-4403-8f7d-4f52d8af542d"]
 [editorState.sceneViewCamera]
 position = [0.0, 5.0, -10.0]
 rotation = [0.2297528982162476, 0.0, 0.0, 0.9732490181922913]
