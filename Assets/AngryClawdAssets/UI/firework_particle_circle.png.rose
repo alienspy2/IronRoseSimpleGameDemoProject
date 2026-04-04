@@ -1,0 +1,18 @@
+guid = "c46cb70c-8e4c-49de-9fe6-28dfa47c5e98"
+version = 1
+[importer]
+type = "TextureImporter"
+max_size = 2048
+compression = "BC7"
+texture_type = "Sprite"
+srgb = true
+filter_mode = "Bilinear"
+wrap_mode = "Clamp"
+generate_mipmaps = false
+sprite_mode = "Single"
+pixels_per_unit = 100.0
+[[sub_assets]]
+name = "firework_particle_circle"
+type = "Sprite"
+index = 0
+guid = "abd03cc4-66a8-4320-84bc-5b0deab39618"

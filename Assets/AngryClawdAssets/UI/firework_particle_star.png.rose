@@ -1,0 +1,18 @@
+guid = "c6e39eb1-f55e-439b-952c-d1c7a4733528"
+version = 1
+[importer]
+type = "TextureImporter"
+max_size = 2048
+compression = "BC7"
+texture_type = "Sprite"
+srgb = true
+filter_mode = "Bilinear"
+wrap_mode = "Clamp"
+generate_mipmaps = false
+sprite_mode = "Single"
+pixels_per_unit = 100.0
+[[sub_assets]]
+name = "firework_particle_star"
+type = "Sprite"
+index = 0
+guid = "a478ef15-7a4f-44af-8496-48a802dd5b19"

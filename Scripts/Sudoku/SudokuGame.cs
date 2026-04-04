@@ -50,6 +50,7 @@ public class SudokuGame : SimpleGameBase
     private UIButton? easyBtn, mediumBtn, hardBtn;
     private UIImage? easyImg, mediumImg, hardImg;
     private bool _isCompleted;
+    private FireworkUIEffect? fireworkEffect;
 
     public override void Start()
     {
@@ -97,7 +98,12 @@ public class SudokuGame : SimpleGameBase
                 btn.onClick = OnExitDemoClicked;
         }
 
-        // 9. 메시지 패널: 클릭 시 게임 리셋, 초기엔 숨기기
+        // 9. 불꽃놀이 이펙트 초기화
+        var fireworkGO = GameObject.Find("FireworkEffect");
+        if (fireworkGO != null)
+            fireworkEffect = fireworkGO.GetComponent<FireworkUIEffect>();
+
+        // 10. 메시지 패널: 클릭 시 게임 리셋, 초기엔 숨기기
         if (messagePanel != null)
         {
             var msgBtn = messagePanel.GetComponent<UIButton>() ?? messagePanel.AddComponent<UIButton>();
@@ -233,6 +239,7 @@ public class SudokuGame : SimpleGameBase
         {
             _isCompleted = true;
             ShowMessage("Congratulations!");
+            fireworkEffect?.Play();
             Debug.Log("[Sudoku] Puzzle completed!");
         }
     }
@@ -261,6 +268,7 @@ public class SudokuGame : SimpleGameBase
     private void StartNewGame()
     {
         _isCompleted = false;
+        fireworkEffect?.Stop();
         HideMessage();
         board?.DestroyBoard();
 

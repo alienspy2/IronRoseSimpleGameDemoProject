@@ -65,6 +65,9 @@ public class AngryClawdGame : SimpleGameBase
     // === 게임 오버 상태 ===
     private bool gameOver = false;
 
+    // === 불꽃놀이 이펙트 ===
+    private FireworkUIEffect? fireworkEffect;
+
     // === 카메라 자동 줌 ===
     private float cameraZVelocity;              // SmoothDamp 내부 상태
     private float cameraXVelocity;              // SmoothDamp 내부 상태
@@ -369,7 +372,7 @@ public class AngryClawdGame : SimpleGameBase
 
         // PileScript.Start()는 다음 프레임에 호출되므로,
         // SetupStage 직후 프레임에서는 Pig가 아직 생성 안 됨 → 스킵
-        if (Time.frameCount <= stageSetupFrame + 1) return;
+        if (Time.frameCount <= stageSetupFrame + 2) return;
 
         var pigs = GameObject.FindGameObjectsWithTag("Pig");
         if (pigs.Length == 0)
@@ -378,6 +381,7 @@ public class AngryClawdGame : SimpleGameBase
             stageClearing = true;
             stageClearTime = Time.time;
             ShowMessage("Stage Clear!");
+            fireworkEffect?.Play();
         }
     }
 
@@ -498,6 +502,13 @@ public class AngryClawdGame : SimpleGameBase
         // 아이콘 스프라이트 로드 (인스펙터 링크)
         pigIconSprite = pigIconSpritePrefab;
         shotIconSprite = shotIconSpritePrefab;
+
+        // 불꽃놀이 이펙트 초기화
+        var fireworkGO = GameObject.Find("FireworkEffect");
+        if (fireworkGO != null)
+        {
+            fireworkEffect = fireworkGO.GetComponent<FireworkUIEffect>();
+        }
 
         // 기존 UIText 숨기기 (텍스트를 빈 문자열로)
         if (pigCountText != null)
@@ -714,6 +725,7 @@ public class AngryClawdGame : SimpleGameBase
     private void HideMessage()
     {
         if (centerMessage != null) centerMessage.SetActive(false);
+        fireworkEffect?.Stop();
     }
 
     private void OnExitDemoClicked()

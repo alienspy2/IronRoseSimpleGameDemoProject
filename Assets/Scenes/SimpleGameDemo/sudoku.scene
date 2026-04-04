@@ -1301,6 +1301,34 @@ overflow = "Overflow"
 [gameObjects.components.fields.font]
 _assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
 _assetType = "Font"
+[[gameObjects]]
+name = "FireworkEffect"
+guid = "669b828e-2bb3-4451-9702-32a059a92a6f"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 4
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "FireworkUIEffect"
+[gameObjects.components.fields]
+enabled = true
+[gameObjects.components.fields.circleSprite]
+_assetGuid = "abd03cc4-66a8-4320-84bc-5b0deab39618"
+_assetType = "Sprite"
+[gameObjects.components.fields.starSprite]
+_assetGuid = "a478ef15-7a4f-44af-8496-48a802dd5b19"
+_assetType = "Sprite"
+[gameObjects.components.fields.sparkSprite]
+_assetGuid = "acbe5f2a-357e-4ca1-b563-ce2a5ee12aea"
+_assetType = "Sprite"
 [sceneEnvironment]
 skyboxExposure = 1.0
 skyboxRotation = 0.0
@@ -1314,6 +1342,6 @@ skyHorizonColor = [0.6000000238418579, 0.699999988079071, 0.8500000238418579, 1.
 [editorState]
 expandedNodes = ["e6003e7c-3ee4-45e2-bcc4-bc7c6018e55a", "02d62a23-042a-4fb2-b525-04950cc96ff0", "a280ae3b-c686-4706-8576-c8dcb4ae13f9", "ed98e5d5-b741-4af5-a05d-9c8bd906a7e2", "d209802c-8ab1-45d4-8f5b-8fd11ee86094", "d8b89cd4-7243-43fc-b463-32509db0a841", "04331678-5b83-4e76-bb78-4e55dcc12eb9", "628eb36a-93a1-487d-90c3-b0054ad2362b"]
 [editorState.sceneViewCamera]
-position = [0.0, 5.0, -10.0]
-rotation = [0.2297528982162476, 0.0, 0.0, 0.9732490181922913]
-pivot = [0.0, 0.0, 0.0]
+position = [18.09236335754395, 36.28271865844727, 54.96716690063477]
+rotation = [-0.08194386214017868, 0.9169602990150452, -0.2985138595104218, -0.2517111897468567]
+pivot = [16.13323974609375, 33.10468292236328, 51.64122009277344]
