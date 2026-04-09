@@ -1329,6 +1329,65 @@ _assetType = "Sprite"
 [gameObjects.components.fields.sparkSprite]
 _assetGuid = "acbe5f2a-357e-4ca1-b563-ce2a5ee12aea"
 _assetType = "Sprite"
+[[gameObjects]]
+name = "TestCompleteButton"
+guid = "6408d1f1-8e74-41eb-b58d-55f55f2088a4"
+activeSelf = false
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 19
+[gameObjects.rectTransform]
+anchorMin = [1.0, 0.0]
+anchorMax = [1.0, 0.0]
+anchoredPosition = [-10.0, -30.0]
+sizeDelta = [120.0, 30.0]
+pivot = [1.0, 0.0]
+[[gameObjects.components]]
+type = "RoseEngine.UIImage"
+[gameObjects.components.fields]
+color = [1.0, 1.0, 1.0, 1.0]
+imageType = "Sliced"
+preserveAspect = false
+[gameObjects.components.fields.sprite]
+_assetGuid = "0e63ebb3-690b-4238-822e-744c2e01005e"
+_assetType = "Sprite"
+[[gameObjects.components]]
+type = "RoseEngine.UIButton"
+[gameObjects.components.fields]
+normalColor = [1.0, 1.0, 1.0, 1.0]
+hoverColor = [0.8999999761581421, 0.8999999761581421, 0.8999999761581421, 1.0]
+pressedColor = [0.699999988079071, 0.699999988079071, 0.699999988079071, 1.0]
+disabledColor = [0.5, 0.5, 0.5, 0.5]
+transition = "ColorTint"
+interactable = true
+[[gameObjects]]
+name = "Label"
+guid = "b4075a38-9993-420a-9c5a-0d97879c8e5c"
+activeSelf = true
+[gameObjects.transform]
+localPosition = [0.0, 0.0, 0.0]
+localRotation = [0.0, 0.0, 0.0, 1.0]
+localScale = [1.0, 1.0, 1.0]
+parentIndex = 48
+[gameObjects.rectTransform]
+anchorMin = [0.0, 0.0]
+anchorMax = [1.0, 1.0]
+anchoredPosition = [0.0, 0.0]
+sizeDelta = [0.0, 0.0]
+pivot = [0.5, 0.5]
+[[gameObjects.components]]
+type = "RoseEngine.UIText"
+[gameObjects.components.fields]
+text = "test-complete"
+fontSize = 14.0
+color = [0.0, 0.0, 0.0, 1.0]
+alignment = "MiddleCenter"
+overflow = "Overflow"
+[gameObjects.components.fields.font]
+_assetGuid = "d9c366aa-c0ae-4ac0-adff-f90215dbaf40"
+_assetType = "Font"
 [sceneEnvironment]
 skyboxExposure = 1.0
 skyboxRotation = 0.0
@@ -1342,6 +1401,6 @@ skyHorizonColor = [0.6000000238418579, 0.699999988079071, 0.8500000238418579, 1.
 [editorState]
 expandedNodes = ["e6003e7c-3ee4-45e2-bcc4-bc7c6018e55a", "02d62a23-042a-4fb2-b525-04950cc96ff0", "a280ae3b-c686-4706-8576-c8dcb4ae13f9", "ed98e5d5-b741-4af5-a05d-9c8bd906a7e2", "d209802c-8ab1-45d4-8f5b-8fd11ee86094", "d8b89cd4-7243-43fc-b463-32509db0a841", "04331678-5b83-4e76-bb78-4e55dcc12eb9", "628eb36a-93a1-487d-90c3-b0054ad2362b"]
 [editorState.sceneViewCamera]
-position = [18.09236335754395, 36.28271865844727, 54.96716690063477]
-rotation = [-0.08194386214017868, 0.9169602990150452, -0.2985138595104218, -0.2517111897468567]
-pivot = [16.13323974609375, 33.10468292236328, 51.64122009277344]
+position = [0.0, 5.0, -10.0]
+rotation = [0.2297528982162476, 0.0, 0.0, 0.9732490181922913]
+pivot = [0.0, 0.0, 0.0]

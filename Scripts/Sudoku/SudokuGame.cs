@@ -106,7 +106,15 @@ public class SudokuGame : SimpleGameBase
         if (fireworkGO != null)
             fireworkEffect = fireworkGO.GetComponent<FireworkUIEffect>();
 
-        // 10. 메시지 패널: 클릭 시 게임 리셋, 초기엔 숨기기
+        // 10. 테스트용 자동 완료 버튼
+        var testCompleteBtn = GameObject.Find("TestCompleteButton");
+        if (testCompleteBtn != null)
+        {
+            var btn = testCompleteBtn.GetComponent<UIButton>();
+            if (btn != null) btn.onClick = OnTestComplete;
+        }
+
+        // 11. 메시지 패널: 클릭 시 게임 리셋, 초기엔 숨기기
         if (messagePanel != null)
         {
             var msgBtn = messagePanel.GetComponent<UIButton>() ?? messagePanel.AddComponent<UIButton>();
@@ -306,6 +314,18 @@ public class SudokuGame : SimpleGameBase
     private void HideMessage()
     {
         if (messagePanel != null) messagePanel.SetActive(false);
+    }
+
+    private void OnTestComplete()
+    {
+        if (currentPuzzle == null || board == null) return;
+        for (int row = 0; row < 9; row++)
+            for (int col = 0; col < 9; col++)
+                if (!currentPuzzle.IsGiven[row, col])
+                    currentPuzzle.SetUserInput(row, col, currentPuzzle.Solution[row, col]);
+        board.UpdateDisplay(currentPuzzle);
+        numberPad?.UpdateButtonStates(currentPuzzle);
+        CheckCompletion();
     }
 
     private void OnExitDemoClicked()
