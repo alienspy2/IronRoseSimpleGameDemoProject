@@ -19,6 +19,8 @@
 // @note    cellSprites 배열 순서: [0]=normal, [1]=given, [2]=selected, [3]=samegroup, [4]=error
 //          SelectCell 후 반드시 UpdateHighlights를 별도 호출해야 한다.
 //          GameObject.Find()로 씬 요소를 이름으로 검색한다 (Phase C에서 고유 이름 부여됨).
+//          _completedFrame: 퍼즐 완료 프레임을 기록하여, 같은 프레임의 mouse release가
+//          messagePanel에 관통되어 StartNewGame을 즉시 호출하는 것을 방지한다.
 // ------------------------------------------------------------
 
 using System.IO;
@@ -50,6 +52,7 @@ public class SudokuGame : SimpleGameBase
     private UIButton? easyBtn, mediumBtn, hardBtn;
     private UIImage? easyImg, mediumImg, hardImg;
     private bool _isCompleted;
+    private int _completedFrame = -1;
     private FireworkUIEffect? fireworkEffect;
 
     public override void Start()
@@ -238,6 +241,7 @@ public class SudokuGame : SimpleGameBase
         if (currentPuzzle != null && currentPuzzle.IsComplete)
         {
             _isCompleted = true;
+            _completedFrame = Time.frameCount;
             ShowMessage("Congratulations!");
             fireworkEffect?.Play();
             Debug.Log("[Sudoku] Puzzle completed!");
@@ -267,6 +271,10 @@ public class SudokuGame : SimpleGameBase
 
     private void StartNewGame()
     {
+        // 퍼즐 완료와 같은 프레임에서 messagePanel 클릭이 관통되어
+        // 즉시 StartNewGame이 호출되는 것을 방지한다.
+        if (_completedFrame == Time.frameCount) return;
+
         _isCompleted = false;
         fireworkEffect?.Stop();
         HideMessage();
