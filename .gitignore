@@ -21,3 +21,6 @@ Thumbs.db
 
 # Generated solution (engine+game combined, local only)
 *.sln
+
+# Feedback
+feedback/
