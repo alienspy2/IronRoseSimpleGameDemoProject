@@ -24,3 +24,6 @@ Thumbs.db
 
 # Feedback
 feedback/
+
+# Local memory (Claude history etc.)
+memory/
