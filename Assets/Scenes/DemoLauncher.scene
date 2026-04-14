@@ -110,7 +110,7 @@ color = [1.0, 1.0, 1.0, 1.0]
 imageType = "Sliced"
 preserveAspect = false
 [gameObjects.components.fields.sprite]
-_assetGuid = "03fec1b9-b3fc-44d0-b42c-90f9d37c6b82"
+_assetGuid = "4d4c4ea7-1c39-4b09-9044-901baa11629f"
 _assetType = "Sprite"
 [[gameObjects.components]]
 type = "RoseEngine.UIButton"
@@ -214,7 +214,7 @@ color = [1.0, 1.0, 1.0, 1.0]
 imageType = "Sliced"
 preserveAspect = false
 [gameObjects.components.fields.sprite]
-_assetGuid = "03fec1b9-b3fc-44d0-b42c-90f9d37c6b82"
+_assetGuid = "4d4c4ea7-1c39-4b09-9044-901baa11629f"
 _assetType = "Sprite"
 [[gameObjects.components]]
 type = "RoseEngine.UIButton"
@@ -264,6 +264,6 @@ skyHorizonColor = [0.6000000238418579, 0.699999988079071, 0.8500000238418579, 1.
 [editorState]
 expandedNodes = ["88bd10ca-9572-4c5a-ace1-ef44a1e9d159", "4f8e9dbb-98c9-4edc-bdf9-8420e7b1397c", "b52849a5-478e-49bd-94a6-ec7531192d44", "c906530c-cf8e-4403-8f7d-4f52d8af542d"]
 [editorState.sceneViewCamera]
-position = [0.0, 4.524296283721924, -9.048593521118164]
+position = [0.0, 4.647750854492188, -9.295503616333008]
 rotation = [0.2297528982162476, 0.0, 0.0, 0.9732490181922913]
 pivot = [0.0, 0.0, 0.0]

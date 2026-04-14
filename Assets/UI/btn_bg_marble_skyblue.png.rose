@@ -1,0 +1,20 @@
+guid = "148125fa-aaed-4f3e-b081-e95c410b70fa"
+version = 1
+[importer]
+type = "TextureImporter"
+max_size = 2048
+compression = "BC3"
+quality = "Low"
+texture_type = "Sprite"
+srgb = true
+filter_mode = "Bilinear"
+wrap_mode = "Clamp"
+generate_mipmaps = false
+pixels_per_unit = 300.0
+border = [80.0, 80.0, 80.0, 80.0]
+pivot = [0.5, 0.5]
+[[sub_assets]]
+name = "btn_bg_marble_skyblue"
+type = "Sprite"
+index = 0
+guid = "4d4c4ea7-1c39-4b09-9044-901baa11629f"
