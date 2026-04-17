@@ -3,7 +3,6 @@ version = 1
 [importer]
 type = "TextureImporter"
 max_size = 2048
-compression = "BC7"
 texture_type = "Sprite"
 srgb = true
 filter_mode = "Bilinear"

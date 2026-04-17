@@ -3,7 +3,6 @@ version = 1
 [importer]
 type = "TextureImporter"
 max_size = 2048
-compression = "BC3"
 quality = "Low"
 texture_type = "Color"
 srgb = true
