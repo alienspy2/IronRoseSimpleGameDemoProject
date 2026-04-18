@@ -3,7 +3,7 @@ version = 1
 [importer]
 type = "TextureImporter"
 max_size = 2048
-quality = "Medium"
+quality = "Low"
 texture_type = "Sprite"
 srgb = true
 filter_mode = "Bilinear"

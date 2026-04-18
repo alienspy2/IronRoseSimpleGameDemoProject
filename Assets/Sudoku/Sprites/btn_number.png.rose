@@ -9,8 +9,8 @@ filter_mode = "Bilinear"
 wrap_mode = "Clamp"
 generate_mipmaps = false
 sprite_mode = "Single"
-pixels_per_unit = 150.0
-border = [20.0, 20.0, 20.0, 20.0]
+pixels_per_unit = 100.0
+quality = "Low"
 [[sub_assets]]
 name = "btn_number"
 type = "Sprite"

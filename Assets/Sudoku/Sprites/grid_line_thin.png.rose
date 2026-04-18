@@ -10,6 +10,7 @@ wrap_mode = "Clamp"
 generate_mipmaps = false
 sprite_mode = "Single"
 pixels_per_unit = 100.0
+quality = "Low"
 [[sub_assets]]
 name = "grid_line_thin"
 type = "Sprite"
